@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4C45BE671A2CEE170036FE4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE661A2CEE170036FE4D /* AppDelegate.swift */; };
-		4C45BE691A2CEE170036FE4D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE681A2CEE170036FE4D /* MasterViewController.swift */; };
-		4C45BE6B1A2CEE170036FE4D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE6A1A2CEE170036FE4D /* DetailViewController.swift */; };
 		4C45BE6E1A2CEE170036FE4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C45BE6C1A2CEE170036FE4D /* Main.storyboard */; };
 		4C45BE701A2CEE170036FE4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C45BE6F1A2CEE170036FE4D /* Images.xcassets */; };
 		4C45BE731A2CEE170036FE4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C45BE711A2CEE170036FE4D /* LaunchScreen.xib */; };
 		4C45BE7F1A2CEE180036FE4D /* Framer_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE7E1A2CEE180036FE4D /* Framer_ConnectTests.swift */; };
+		4C45BE8E1A2D21810036FE4D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE8D1A2D21810036FE4D /* WebViewController.swift */; };
+		4C45BE901A2D21A70036FE4D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C45BE8F1A2D21A70036FE4D /* WebKit.framework */; };
+		4C45BE971A2D24B50036FE4D /* BonjourFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE961A2D24B50036FE4D /* BonjourFinder.m */; };
+		4C45BE991A2D30E70036FE4D /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE981A2D30E70036FE4D /* SearchingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +32,18 @@
 		4C45BE611A2CEE170036FE4D /* Framer Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Framer Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C45BE651A2CEE170036FE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C45BE661A2CEE170036FE4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C45BE681A2CEE170036FE4D /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		4C45BE6A1A2CEE170036FE4D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4C45BE6D1A2CEE170036FE4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C45BE6F1A2CEE170036FE4D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C45BE721A2CEE170036FE4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4C45BE781A2CEE180036FE4D /* Framer ConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Framer ConnectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C45BE7D1A2CEE180036FE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C45BE7E1A2CEE180036FE4D /* Framer_ConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framer_ConnectTests.swift; sourceTree = "<group>"; };
+		4C45BE8D1A2D21810036FE4D /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		4C45BE8F1A2D21A70036FE4D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		4C45BE911A2D21B90036FE4D /* Framer Connect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Framer Connect-Bridging-Header.h"; sourceTree = "<group>"; };
+		4C45BE951A2D24B50036FE4D /* BonjourFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonjourFinder.h; sourceTree = "<group>"; };
+		4C45BE961A2D24B50036FE4D /* BonjourFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonjourFinder.m; sourceTree = "<group>"; };
+		4C45BE981A2D30E70036FE4D /* SearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C45BE901A2D21A70036FE4D /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,9 +68,11 @@
 		4C45BE581A2CEE170036FE4D = {
 			isa = PBXGroup;
 			children = (
+				4C45BE8F1A2D21A70036FE4D /* WebKit.framework */,
 				4C45BE631A2CEE170036FE4D /* Framer Connect */,
 				4C45BE7B1A2CEE180036FE4D /* Framer ConnectTests */,
 				4C45BE621A2CEE170036FE4D /* Products */,
+				4C45BE911A2D21B90036FE4D /* Framer Connect-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,12 +89,14 @@
 			isa = PBXGroup;
 			children = (
 				4C45BE661A2CEE170036FE4D /* AppDelegate.swift */,
-				4C45BE681A2CEE170036FE4D /* MasterViewController.swift */,
-				4C45BE6A1A2CEE170036FE4D /* DetailViewController.swift */,
 				4C45BE6C1A2CEE170036FE4D /* Main.storyboard */,
 				4C45BE6F1A2CEE170036FE4D /* Images.xcassets */,
 				4C45BE711A2CEE170036FE4D /* LaunchScreen.xib */,
 				4C45BE641A2CEE170036FE4D /* Supporting Files */,
+				4C45BE8D1A2D21810036FE4D /* WebViewController.swift */,
+				4C45BE951A2D24B50036FE4D /* BonjourFinder.h */,
+				4C45BE961A2D24B50036FE4D /* BonjourFinder.m */,
+				4C45BE981A2D30E70036FE4D /* SearchingViewController.swift */,
 			);
 			path = "Framer Connect";
 			sourceTree = "<group>";
@@ -215,9 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C45BE6B1A2CEE170036FE4D /* DetailViewController.swift in Sources */,
-				4C45BE691A2CEE170036FE4D /* MasterViewController.swift in Sources */,
+				4C45BE971A2D24B50036FE4D /* BonjourFinder.m in Sources */,
+				4C45BE8E1A2D21810036FE4D /* WebViewController.swift in Sources */,
 				4C45BE671A2CEE170036FE4D /* AppDelegate.swift in Sources */,
+				4C45BE991A2D30E70036FE4D /* SearchingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +354,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Framer Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Framer Connect-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +367,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Framer Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Framer Connect-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +428,7 @@
 				4C45BE841A2CEE180036FE4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C45BE851A2CEE180036FE4D /* Build configuration list for PBXNativeTarget "Framer ConnectTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +437,7 @@
 				4C45BE871A2CEE180036FE4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
