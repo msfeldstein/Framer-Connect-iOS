@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4C45BE601A2CEE170036FE4D"
-               BuildableName = "Framer Connect.app"
-               BlueprintName = "Framer Connect"
+               BuildableName = "Framer Link.app"
+               BlueprintName = "Framer Link"
                ReferencedContainer = "container:Framer Connect.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C45BE601A2CEE170036FE4D"
-            BuildableName = "Framer Connect.app"
-            BlueprintName = "Framer Connect"
+            BuildableName = "Framer Link.app"
+            BlueprintName = "Framer Link"
             ReferencedContainer = "container:Framer Connect.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C45BE601A2CEE170036FE4D"
-            BuildableName = "Framer Connect.app"
-            BlueprintName = "Framer Connect"
+            BuildableName = "Framer Link.app"
+            BlueprintName = "Framer Link"
             ReferencedContainer = "container:Framer Connect.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,8 +94,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4C45BE601A2CEE170036FE4D"
-            BuildableName = "Framer Connect.app"
-            BlueprintName = "Framer Connect"
+            BuildableName = "Framer Link.app"
+            BlueprintName = "Framer Link"
             ReferencedContainer = "container:Framer Connect.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

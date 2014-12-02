@@ -134,9 +134,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C45BE601A2CEE170036FE4D /* Framer Connect */ = {
+		4C45BE601A2CEE170036FE4D /* Framer Link */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C45BE821A2CEE180036FE4D /* Build configuration list for PBXNativeTarget "Framer Connect" */;
+			buildConfigurationList = 4C45BE821A2CEE180036FE4D /* Build configuration list for PBXNativeTarget "Framer Link" */;
 			buildPhases = (
 				4C45BE5D1A2CEE170036FE4D /* Sources */,
 				4C45BE5E1A2CEE170036FE4D /* Frameworks */,
@@ -146,7 +146,7 @@
 			);
 			dependencies = (
 			);
-			name = "Framer Connect";
+			name = "Framer Link";
 			productName = "Framer Connect";
 			productReference = 4C45BE611A2CEE170036FE4D /* Framer Connect.app */;
 			productType = "com.apple.product-type.application";
@@ -201,7 +201,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C45BE601A2CEE170036FE4D /* Framer Connect */,
+				4C45BE601A2CEE170036FE4D /* Framer Link */,
 				4C45BE771A2CEE180036FE4D /* Framer ConnectTests */,
 			);
 		};
@@ -253,7 +253,7 @@
 /* Begin PBXTargetDependency section */
 		4C45BE7A1A2CEE180036FE4D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4C45BE601A2CEE170036FE4D /* Framer Connect */;
+			target = 4C45BE601A2CEE170036FE4D /* Framer Link */;
 			targetProxy = 4C45BE791A2CEE180036FE4D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -434,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C45BE821A2CEE180036FE4D /* Build configuration list for PBXNativeTarget "Framer Connect" */ = {
+		4C45BE821A2CEE180036FE4D /* Build configuration list for PBXNativeTarget "Framer Link" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C45BE831A2CEE180036FE4D /* Debug */,

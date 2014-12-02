@@ -24,7 +24,7 @@
         <!--Searching View Controller-->
         <scene sceneID="b1g-HM-K3d">
             <objects>
-                <viewController id="yRM-L7-SXR" customClass="SearchingViewController" customModule="Framer_Connect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yRM-L7-SXR" customClass="SearchingViewController" customModule="Framer_Link" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iSo-ZX-9F8"/>
                         <viewControllerLayoutGuide type="bottom" id="L9g-wH-fSy"/>
@@ -33,17 +33,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching for Framer Connect over Bonjour.  Make sure you're on the same wi-fi network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iX-qc-nIS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iX-qc-nIS">
                                 <rect key="frame" x="16" y="72" width="288" height="158"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="158" id="Ley-Ao-hyR"/>
                                 </constraints>
+                                <string key="text">Searching for Framer Connect over Bonjour.  Make sure you're on the same wi-fi network.
+
+You can download Framer Link for Mac at extrastrength.co/link</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SA-74-gAi">
-                                <rect key="frame" x="140.5" y="226" width="40" height="40"/>
+                                <rect key="frame" x="140" y="238" width="40" height="40"/>
                                 <state key="normal" image="Camera">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -57,7 +60,7 @@
                             <constraint firstAttribute="centerX" secondItem="3SA-74-gAi" secondAttribute="centerX" constant="-0.5" id="7Hs-MC-DwV"/>
                             <constraint firstItem="8iX-qc-nIS" firstAttribute="top" secondItem="iSo-ZX-9F8" secondAttribute="bottom" constant="8" id="JaW-hD-9Rx"/>
                             <constraint firstItem="8iX-qc-nIS" firstAttribute="trailing" secondItem="KJW-JY-tHS" secondAttribute="trailingMargin" id="KLs-YY-VEy"/>
-                            <constraint firstItem="3SA-74-gAi" firstAttribute="top" secondItem="8iX-qc-nIS" secondAttribute="bottom" constant="-4" id="LqF-yj-AXF"/>
+                            <constraint firstItem="3SA-74-gAi" firstAttribute="top" secondItem="8iX-qc-nIS" secondAttribute="bottom" constant="8" id="LqF-yj-AXF"/>
                             <constraint firstItem="8iX-qc-nIS" firstAttribute="leading" secondItem="KJW-JY-tHS" secondAttribute="leadingMargin" id="t5a-jb-ogE"/>
                         </constraints>
                     </view>
@@ -89,7 +92,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="vDO-bW-eSB"/>
                                 </constraints>
-                                <string key="text">Make sure you are running ProtoKit for Mac and that you are on the same WiFi network.  If ProtoKit doesn't connect automatically you can scan the QR code shown in the Mac app's help menu.</string>
+                                <string key="text">Make sure you are running Framer Link for Mac and that you are on the same WiFi network.  If ProtoKit doesn't connect automatically you can scan the QR code shown in the Mac app's help menu.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

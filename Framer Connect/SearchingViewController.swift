@@ -9,23 +9,23 @@
 import UIKit
 
 class SearchingViewController: UIViewController, BonjourFinderDelegate, QRDelegate {
-    var bonjour = BonjourFinder()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.bonjour.delegate = self
-        
-    }
+    var bonjour : BonjourFinder?
+    var webViewController : WebViewController?
     
     override func viewDidAppear(animated: Bool) {
-        self.bonjour.start()
+        print("hi")
+        self.bonjour = BonjourFinder()
+        self.bonjour!.delegate = self
+        self.bonjour!.start()
     }
 
     func foundAddress(address: String!, atPort port: Int32) {
-        print("Address \(address) Port \(port)")
         let url = NSURL(string: "http://\(address):8000")
-        let webViewController = WebViewController()
-        webViewController.url = url
-        self.presentViewController(webViewController, animated: true) { () -> Void in }
+        print(url)
+        if (self.webViewController? != nil) { return }
+        self.webViewController = WebViewController()
+        self.webViewController!.url = url
+        self.presentViewController(self.webViewController!, animated: true) { () -> Void in }
     }
     
     func scannedQRCode(code: String!) {
