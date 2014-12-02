@@ -37,7 +37,11 @@ class WebViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     func pop() {
-        self.webView?.goBack()
+        if (self.webView!.canGoBack) {
+            self.webView?.goBack()
+        } else {
+            self.webView?.reload()
+        }
     }
     
     override func viewDidLayoutSubviews() {

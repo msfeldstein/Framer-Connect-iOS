@@ -53,7 +53,7 @@
         
         ip_socket_address *socketAddress = (ip_socket_address *)[data bytes];
         
-        if (socketAddress && (socketAddress->sa.sa_family == AF_INET || socketAddress->sa.sa_family == AF_INET6))
+        if (socketAddress && (socketAddress->sa.sa_family == AF_INET))
         {
             const char *addressStr = inet_ntop(
                                                socketAddress->sa.sa_family,

@@ -4,3 +4,4 @@
 
 #import <WebKit/WebKit.h>
 #import "BonjourFinder.h"
+#import "QRCodeViewController.h"

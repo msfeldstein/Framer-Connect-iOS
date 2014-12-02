@@ -8,11 +8,15 @@
 
 import UIKit
 
-class SearchingViewController: UIViewController, BonjourFinderDelegate {
+class SearchingViewController: UIViewController, BonjourFinderDelegate, QRDelegate {
     var bonjour = BonjourFinder()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bonjour.delegate = self
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         self.bonjour.start()
     }
 
@@ -22,6 +26,17 @@ class SearchingViewController: UIViewController, BonjourFinderDelegate {
         let webViewController = WebViewController()
         webViewController.url = url
         self.presentViewController(webViewController, animated: true) { () -> Void in }
+    }
+    
+    func scannedQRCode(code: String!) {
+        self.foundAddress(code, atPort: 8000)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "scanQR" {
+            let qrvc = segue.destinationViewController as QRCodeViewController
+            qrvc.qrDelegate = self
+        }
     }
 
 }

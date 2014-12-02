@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ezu-Xz-zPt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ezu-Xz-zPt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -18,7 +19,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97B-gV-8WJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-825" y="-507"/>
+            <point key="canvasLocation" x="-440" y="-479.95999999999998"/>
         </scene>
         <!--Searching View Controller-->
         <scene sceneID="b1g-HM-K3d">
@@ -29,15 +30,117 @@
                         <viewControllerLayoutGuide type="bottom" id="L9g-wH-fSy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KJW-JY-tHS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching for Framer Connect over Bonjour.  Make sure you're on the same wi-fi network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iX-qc-nIS">
+                                <rect key="frame" x="16" y="72" width="288" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="158" id="Ley-Ao-hyR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SA-74-gAi">
+                                <rect key="frame" x="140.5" y="226" width="40" height="40"/>
+                                <state key="normal" image="Camera">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="a1D-Zm-pWi" kind="modal" identifier="scanQR" id="egg-qF-m03"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="3SA-74-gAi" secondAttribute="centerX" constant="-0.5" id="7Hs-MC-DwV"/>
+                            <constraint firstItem="8iX-qc-nIS" firstAttribute="top" secondItem="iSo-ZX-9F8" secondAttribute="bottom" constant="8" id="JaW-hD-9Rx"/>
+                            <constraint firstItem="8iX-qc-nIS" firstAttribute="trailing" secondItem="KJW-JY-tHS" secondAttribute="trailingMargin" id="KLs-YY-VEy"/>
+                            <constraint firstItem="3SA-74-gAi" firstAttribute="top" secondItem="8iX-qc-nIS" secondAttribute="bottom" constant="-4" id="LqF-yj-AXF"/>
+                            <constraint firstItem="8iX-qc-nIS" firstAttribute="leading" secondItem="KJW-JY-tHS" secondAttribute="leadingMargin" id="t5a-jb-ogE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Y5-K7-Iwc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lXX-Ko-X4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-85" y="-507"/>
+            <point key="canvasLocation" x="-46" y="-480"/>
+        </scene>
+        <!--Scan QR From App-->
+        <scene sceneID="33j-vl-5Bt">
+            <objects>
+                <viewController id="a1D-Zm-pWi" customClass="QRCodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CJQ-Ch-591"/>
+                        <viewControllerLayoutGuide type="bottom" id="scs-kC-J75"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r5w-Gg-55s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYg-nQ-ZQY">
+                                <rect key="frame" x="0.0" y="248" width="320" height="320"/>
+                                <color key="backgroundColor" white="0.82196624090000003" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tm5-Zl-NsY">
+                                <rect key="frame" x="16" y="77" width="280" height="112"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="vDO-bW-eSB"/>
+                                </constraints>
+                                <string key="text">Make sure you are running ProtoKit for Mac and that you are on the same WiFi network.  If ProtoKit doesn't connect automatically you can scan the QR code shown in the Mac app's help menu.</string>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect Manually" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBb-Hw-FXg">
+                                <rect key="frame" x="20" y="33" width="162" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECJ-qC-nOe">
+                                <rect key="frame" x="250" y="29" width="46" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="a1D-Zm-pWi" eventType="touchUpInside" id="Dys-M0-iAp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tm5-Zl-NsY" secondAttribute="trailing" constant="8" id="1L6-i0-oe6"/>
+                            <constraint firstItem="scs-kC-J75" firstAttribute="top" secondItem="uYg-nQ-ZQY" secondAttribute="bottom" id="5n0-XS-c6T"/>
+                            <constraint firstItem="ECJ-qC-nOe" firstAttribute="top" secondItem="zBb-Hw-FXg" secondAttribute="top" constant="-4" id="9bo-76-sqa"/>
+                            <constraint firstItem="zBb-Hw-FXg" firstAttribute="leading" secondItem="r5w-Gg-55s" secondAttribute="leadingMargin" constant="4" id="GmE-jf-WfH"/>
+                            <constraint firstItem="uYg-nQ-ZQY" firstAttribute="top" secondItem="Tm5-Zl-NsY" secondAttribute="bottom" constant="59" id="JlI-mR-aTm"/>
+                            <constraint firstItem="Tm5-Zl-NsY" firstAttribute="leading" secondItem="r5w-Gg-55s" secondAttribute="leadingMargin" id="Nea-nu-PqR"/>
+                            <constraint firstItem="Tm5-Zl-NsY" firstAttribute="top" secondItem="zBb-Hw-FXg" secondAttribute="bottom" constant="16.5" id="Odd-uo-343"/>
+                            <constraint firstItem="zBb-Hw-FXg" firstAttribute="top" secondItem="CJQ-Ch-591" secondAttribute="bottom" constant="13" id="R1B-YU-pgE"/>
+                            <constraint firstItem="zBb-Hw-FXg" firstAttribute="leading" secondItem="Tm5-Zl-NsY" secondAttribute="leading" constant="4" id="Wqj-sx-gEx"/>
+                            <constraint firstAttribute="width" secondItem="uYg-nQ-ZQY" secondAttribute="width" id="ctZ-ue-XCS"/>
+                            <constraint firstAttribute="centerX" secondItem="uYg-nQ-ZQY" secondAttribute="centerX" id="spp-0L-dtQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ECJ-qC-nOe" secondAttribute="trailing" constant="8" id="yRU-ht-DFa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scan QR From App" id="oZD-T7-2fc"/>
+                    <connections>
+                        <outlet property="videoContainer" destination="uYg-nQ-ZQY" id="98B-SK-ilh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NfU-GI-9AX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="159"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Camera" width="40" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

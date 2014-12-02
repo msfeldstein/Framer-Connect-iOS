@@ -16,6 +16,7 @@
 		4C45BE901A2D21A70036FE4D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C45BE8F1A2D21A70036FE4D /* WebKit.framework */; };
 		4C45BE971A2D24B50036FE4D /* BonjourFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE961A2D24B50036FE4D /* BonjourFinder.m */; };
 		4C45BE991A2D30E70036FE4D /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE981A2D30E70036FE4D /* SearchingViewController.swift */; };
+		4C45BED81A2D38470036FE4D /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BED71A2D38470036FE4D /* QRCodeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		4C45BE951A2D24B50036FE4D /* BonjourFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonjourFinder.h; sourceTree = "<group>"; };
 		4C45BE961A2D24B50036FE4D /* BonjourFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonjourFinder.m; sourceTree = "<group>"; };
 		4C45BE981A2D30E70036FE4D /* SearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
+		4C45BED61A2D38470036FE4D /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		4C45BED71A2D38470036FE4D /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				4C45BE951A2D24B50036FE4D /* BonjourFinder.h */,
 				4C45BE961A2D24B50036FE4D /* BonjourFinder.m */,
 				4C45BE981A2D30E70036FE4D /* SearchingViewController.swift */,
+				4C45BED61A2D38470036FE4D /* QRCodeViewController.h */,
+				4C45BED71A2D38470036FE4D /* QRCodeViewController.m */,
 			);
 			path = "Framer Connect";
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				TargetAttributes = {
 					4C45BE601A2CEE170036FE4D = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 7GU3G9VBFN;
 					};
 					4C45BE771A2CEE180036FE4D = {
 						CreatedOnToolsVersion = 6.1;
@@ -226,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C45BED81A2D38470036FE4D /* QRCodeViewController.m in Sources */,
 				4C45BE971A2D24B50036FE4D /* BonjourFinder.m in Sources */,
 				4C45BE8E1A2D21810036FE4D /* WebViewController.swift in Sources */,
 				4C45BE671A2CEE170036FE4D /* AppDelegate.swift in Sources */,
@@ -355,9 +362,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Framer Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Framer Connect-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -368,9 +378,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Framer Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Framer Connect-Bridging-Header.h";
 			};
 			name = Release;
