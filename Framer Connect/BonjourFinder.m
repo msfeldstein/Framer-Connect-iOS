@@ -26,7 +26,7 @@
 }
 
 - (void)start {
-    [_browser searchForServicesOfType:@"_framerconnect._tcp" inDomain:@""];
+    [_browser searchForServicesOfType:@"_framerstudio._tcp" inDomain:@""];
 }
 
 - (void) netServiceBrowser:(NSNetServiceBrowser *)aNetServiceBrowser didFindService:(NSNetService *)aNetService moreComing:(BOOL)moreComing {

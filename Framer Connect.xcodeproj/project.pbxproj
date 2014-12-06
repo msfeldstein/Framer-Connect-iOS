@@ -11,7 +11,6 @@
 		4C45BE6E1A2CEE170036FE4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C45BE6C1A2CEE170036FE4D /* Main.storyboard */; };
 		4C45BE701A2CEE170036FE4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C45BE6F1A2CEE170036FE4D /* Images.xcassets */; };
 		4C45BE731A2CEE170036FE4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C45BE711A2CEE170036FE4D /* LaunchScreen.xib */; };
-		4C45BE7F1A2CEE180036FE4D /* Framer_ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE7E1A2CEE180036FE4D /* Framer_ConnectTests.swift */; };
 		4C45BE8E1A2D21810036FE4D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE8D1A2D21810036FE4D /* WebViewController.swift */; };
 		4C45BE901A2D21A70036FE4D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C45BE8F1A2D21A70036FE4D /* WebKit.framework */; };
 		4C45BE971A2D24B50036FE4D /* BonjourFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BE961A2D24B50036FE4D /* BonjourFinder.m */; };
@@ -19,24 +18,13 @@
 		4C45BED81A2D38470036FE4D /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C45BED71A2D38470036FE4D /* QRCodeViewController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4C45BE791A2CEE180036FE4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C45BE591A2CEE170036FE4D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C45BE601A2CEE170036FE4D;
-			remoteInfo = "Framer Connect";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		4C45BE611A2CEE170036FE4D /* Framer Connect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Framer Connect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C45BE611A2CEE170036FE4D /* Framer Link.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Framer Link.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C45BE651A2CEE170036FE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C45BE661A2CEE170036FE4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C45BE6D1A2CEE170036FE4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C45BE6F1A2CEE170036FE4D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4C45BE721A2CEE170036FE4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		4C45BE781A2CEE180036FE4D /* Framer ConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Framer ConnectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C45BE7D1A2CEE180036FE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C45BE7E1A2CEE180036FE4D /* Framer_ConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framer_ConnectTests.swift; sourceTree = "<group>"; };
 		4C45BE8D1A2D21810036FE4D /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -58,13 +46,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C45BE751A2CEE180036FE4D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,8 +63,7 @@
 		4C45BE621A2CEE170036FE4D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C45BE611A2CEE170036FE4D /* Framer Connect.app */,
-				4C45BE781A2CEE180036FE4D /* Framer ConnectTests.xctest */,
+				4C45BE611A2CEE170036FE4D /* Framer Link.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,26 +128,8 @@
 			);
 			name = "Framer Link";
 			productName = "Framer Connect";
-			productReference = 4C45BE611A2CEE170036FE4D /* Framer Connect.app */;
+			productReference = 4C45BE611A2CEE170036FE4D /* Framer Link.app */;
 			productType = "com.apple.product-type.application";
-		};
-		4C45BE771A2CEE180036FE4D /* Framer ConnectTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C45BE851A2CEE180036FE4D /* Build configuration list for PBXNativeTarget "Framer ConnectTests" */;
-			buildPhases = (
-				4C45BE741A2CEE180036FE4D /* Sources */,
-				4C45BE751A2CEE180036FE4D /* Frameworks */,
-				4C45BE761A2CEE180036FE4D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4C45BE7A1A2CEE180036FE4D /* PBXTargetDependency */,
-			);
-			name = "Framer ConnectTests";
-			productName = "Framer ConnectTests";
-			productReference = 4C45BE781A2CEE180036FE4D /* Framer ConnectTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -181,10 +143,6 @@
 					4C45BE601A2CEE170036FE4D = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 7GU3G9VBFN;
-					};
-					4C45BE771A2CEE180036FE4D = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 4C45BE601A2CEE170036FE4D;
 					};
 				};
 			};
@@ -202,7 +160,6 @@
 			projectRoot = "";
 			targets = (
 				4C45BE601A2CEE170036FE4D /* Framer Link */,
-				4C45BE771A2CEE180036FE4D /* Framer ConnectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,13 +172,6 @@
 				4C45BE6E1A2CEE170036FE4D /* Main.storyboard in Resources */,
 				4C45BE731A2CEE170036FE4D /* LaunchScreen.xib in Resources */,
 				4C45BE701A2CEE170036FE4D /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C45BE761A2CEE180036FE4D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,23 +190,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C45BE741A2CEE180036FE4D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C45BE7F1A2CEE180036FE4D /* Framer_ConnectTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4C45BE7A1A2CEE180036FE4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C45BE601A2CEE170036FE4D /* Framer Link */;
-			targetProxy = 4C45BE791A2CEE180036FE4D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4C45BE6C1A2CEE170036FE4D /* Main.storyboard */ = {
@@ -367,7 +301,7 @@
 				INFOPLIST_FILE = "Framer Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f5cd457b-891c-4543-a376-4590bc60f057";
 				SWIFT_OBJC_BRIDGING_HEADER = "Framer Connect-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -383,42 +317,8 @@
 				INFOPLIST_FILE = "Framer Connect/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f5cd457b-891c-4543-a376-4590bc60f057";
 				SWIFT_OBJC_BRIDGING_HEADER = "Framer Connect-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		4C45BE861A2CEE180036FE4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Framer ConnectTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Framer Connect.app/Framer Connect";
-			};
-			name = Debug;
-		};
-		4C45BE871A2CEE180036FE4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Framer ConnectTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Framer Connect.app/Framer Connect";
 			};
 			name = Release;
 		};
@@ -439,15 +339,6 @@
 			buildConfigurations = (
 				4C45BE831A2CEE180036FE4D /* Debug */,
 				4C45BE841A2CEE180036FE4D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4C45BE851A2CEE180036FE4D /* Build configuration list for PBXNativeTarget "Framer ConnectTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C45BE861A2CEE180036FE4D /* Debug */,
-				4C45BE871A2CEE180036FE4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
